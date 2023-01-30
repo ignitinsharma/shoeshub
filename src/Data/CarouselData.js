@@ -30,6 +30,6 @@ export const ImagesCarousel = [
     image: img7,
   },
   {
-    image: img5,
+    image: img8,
   },
 ];

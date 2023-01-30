@@ -21,9 +21,9 @@ const HomeCarousel = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
-  console.log(ImagesCarousel);
+  // console.log(ImagesCarousel);
   return (
-    <div>
+    <div style={{zIndex:'-1'}}>
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -43,6 +43,7 @@ const HomeCarousel = () => {
                 display: "flex",
                 justifyContent: "center",
               }}
+              key={el}
             >
               <img className="CarouselHomeImage" src={el.image} alt="" />
             </div>
